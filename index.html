@@ -4,16 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Block vs Inline Elements</title>
+    <style>
+        /* Add minimal styling for block/inline comparison */
+        .block-demo {
+            border: 1px solid #aaa;
+            margin-bottom: 4px;
+            padding: 4px;
+        }
+        .inline-demo {
+            border: 1px dotted red;
+            margin-right: 4px;
+            padding: 2px;
+            display: inline;
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav>
             <a href="index.html">Home</a> |
             <a href="about.html">About</a> |
-            <a href="examples.html">Examples</a> |
+            <a href="examples.html">Examples</a>
         </nav>
-        <h1>Understanding Block Elements</h1>
-        <h2>Using Semantic Tags &amp; Including a Practice Form</h2>
     </header>
+    <h1>Understanding Block vs Inline Elements</h1>
+    <h2>Using Semantic Tags &amp; Including a Practice Form</h2>
+
+    <h2>What are Block Elements?</h2>
+    <p>
+        Block elements take up the full width available and <strong>always start on a new line.</strong>
+    </p>
+    <p>
+        Examples include: <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;header&gt;</code>
+    </p>
+    <div class="block-demo">This is a block-level div element.</div>
+    <p class="block-demo">This is a block-level paragraph element.</p>
+
+    <h2>What are Inline Elements?</h2>
+    <p>
+        Inline elements only take up as much width as necessary and do not start on a new line.
+    </p>
+    <p>
+        Examples include: <code>&lt;span&gt;</code>, <code>&lt;a&gt;</code>, <code>&lt;strong&gt;</code>
+    </p>
+    <p>
+        This is a paragraph with an <span style="text-decoration: underline;">inline span element</span> inside.
+    </p>
+    <p>
+        This text contains <strong><u>inline strong text</u></strong> that flows in line.
+    </p>
+
+    <h2>Comparison</h2>
+    <p>
+        Block elements stack vertically, while inline elements flow horizontally in the same line.
+    </p>
+    <div class="block-demo">block element</div>
+    <div class="block-demo">block element</div>
+    <div class="block-demo">block element</div>
+    <div class="block-demo">block element</div>
+    <div class="block-demo">block element</div>
+    <div>
+        <span class="inline-demo">inline element</span>
+        <span class="inline-demo">inline element</span>
+        <span class="inline-demo">inline element</span>
+        <span class="inline-demo">inline element</span>
+        <span class="inline-demo">inline element</span>
+        <span class="inline-demo">inline element</span>
+    </div>
+    <footer>
+        <p>&copy; 2025 Block vs Inline Elements Tutorial</p>
+    </footer>
 </body>
 </html>
