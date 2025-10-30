@@ -2,3 +2,12 @@ html {
     background-color: rgb(54, 23, 23);
     color: white;
 }
+
+#main-title {
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.centered-heading{
+    text-align: center;
+}
